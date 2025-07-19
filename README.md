@@ -79,7 +79,7 @@ python app.py
 - Method: POST
 - URL: http://127.0.0.1:5000/upload
 - Body: form-data
-- - Key: image → Type: File → Upload any image
+    - Key: image → Type: File → Upload any image
 You’ll get a JSON response with labels detected by AWS Rekognition.
 ---
 
@@ -113,3 +113,10 @@ Ensure your IAM user has permissions for:
 
 Do not commit your .env file.
 
+## Future Works
+
+- Add frontend drag & drop UI
+
+- Show bounding boxes on faces
+
+- Deploy using Docker or AWS EC2
