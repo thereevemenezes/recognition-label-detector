@@ -75,6 +75,32 @@ S3_BUCKET=your-s3-bucket-name
 python app.py
 ```
 
+## Test with Postman
+- Method: POST
+- URL: http://127.0.0.1:5000/upload
+- Body: form-data
+- - Key: image → Type: File → Upload any image
+You’ll get a JSON response with labels detected by AWS Rekognition.
+---
+
+### Example Response
+
+```bash
+{
+  "labels": [
+    {
+      "Name": "Person",
+      "Confidence": 99.9
+    },
+    {
+      "Name": "Smile",
+      "Confidence": 98.5
+    }
+  ]
+}
+```
+---
+
 ## 📌 Notes
 
 Ensure your IAM user has permissions for:
@@ -86,4 +112,4 @@ Ensure your IAM user has permissions for:
 - s3:GetObject
 
 Do not commit your .env file.
-```
+
