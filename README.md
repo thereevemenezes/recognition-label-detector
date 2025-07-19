@@ -37,7 +37,6 @@ recognition-label-detector/
 │
 └── .venv/ (optional, for local dev)
 
-
 ---
 
 ## ⚙️ Setup Instructions
@@ -47,37 +46,44 @@ recognition-label-detector/
 ```bash
 git clone https://github.com/thereevemenezes/recognition-label-detector.git
 cd recognition-label-detector/backend
-
-2. 🐍 Create & Activate Virtual Environment (Windows)
-
+```
+---
+### 2. 🐍 Create & Activate Virtual Environment (Windows)
+```bash
 python -m venv venv
-venv\Scripts\activate
-
-3. 📦 Install Requirements
+venv\Scripts\activate 
+```
+---
+### 3. 📦 Install Requirements
+```bash
 pip install -r requirements.txt
-
-4. 🔐 Configure AWS Credentials
-
-Create a .env file inside the backend/ folder:
+```
+---
+### 4. 🔐 Configure AWS Credentials
+```bash
+# Create a .env file inside the backend/ folder:
 
 AWS_ACCESS_KEY_ID=your_access_key
 AWS_SECRET_ACCESS_KEY=your_secret_key
 AWS_REGION=us-east-1
 S3_BUCKET=your-s3-bucket-name
+```
+---
 
-
-Run the Server
+### 5.Run the Server
+```bash
 python app.py
+```
 
-
-📌 Notes
+## 📌 Notes
 
 Ensure your IAM user has permissions for:
 
-rekognition:DetectLabels
+- rekognition:DetectLabels
 
-s3:PutObject
+- s3:PutObject
 
-s3:GetObject
+- s3:GetObject
 
 Do not commit your .env file.
+```
