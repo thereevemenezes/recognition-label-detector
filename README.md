@@ -27,6 +27,7 @@ Built with AWS, S3, Rekognition, and Flask. Ideal for real-world cloud ML pipeli
 
 ## 📂 Folder Structure
 
+```bash
 recognition-label-detector/
 │
 ├── backend/
@@ -36,7 +37,7 @@ recognition-label-detector/
 │ ├── requirements.txt # Python dependencies
 │
 └── .venv/ (optional, for local dev)
-
+```
 ---
 
 ## ⚙️ Setup Instructions
